@@ -1209,8 +1209,8 @@ function fit() {
 window.visualViewport?.addEventListener('resize', fit);
 addEventListener('resize', fit); fit();
 
-const CAM3D = /[?&]cam3d\b/.test(location.search);
-const FULL = CAM3D || /\/camera\/?$/.test(location.pathname) || /[?&]camera\b/.test(location.search);
+const CAM3D = /[?&]cam3d\b/.test(location.search);   // this branch opens straight into the full-screen camera
+const FULL = true;
 document.body.classList.toggle('full', FULL); document.body.classList.toggle('cam3d', CAM3D);
 $('vthumb').addEventListener('click', e => { e.stopPropagation(); SFX.key(); showScreen('gallery'); });
 $('vwin').addEventListener('pointerdown', () => SFX.key());

@@ -1,4 +1,6 @@
-# texture-cam
+# texture-cam · full-screen direction
+
+This branch opens straight into the **full-screen** camera. It deploys to its own Vercel preview link; merge into `main` if this becomes the chosen direction.
 
 A little camera that collects textures from wherever you are. One static page, no build step.
 
