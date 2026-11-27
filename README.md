@@ -1,1 +1,1 @@
-# cam.texture
+# cam-texture
