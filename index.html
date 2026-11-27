@@ -1209,7 +1209,7 @@ function fit() {
 window.visualViewport?.addEventListener('resize', fit);
 addEventListener('resize', fit); fit();
 
-const CAM3D = /[?&]cam3d\b/.test(location.search);
+const CAM3D = true;   // this branch opens straight into the 3D camera
 const FULL = CAM3D || /\/camera\/?$/.test(location.pathname) || /[?&]camera\b/.test(location.search);
 document.body.classList.toggle('full', FULL); document.body.classList.toggle('cam3d', CAM3D);
 $('vthumb').addEventListener('click', e => { e.stopPropagation(); SFX.key(); showScreen('gallery'); });
